@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Todo List</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+	<div class="container">
+		<h1 class="text-center">To Do List</h1>
+		<table class="table mt-5">
+			<thead class="thead-dark">
+			  <tr>
+				<th scope="col">Id</th>
+				<th scope="col">Content</th>
+				<th scope="col">Status</th>
+			  </tr>
+			</thead>
+			<tbody id="data-area">
+			</tbody>
+		  </table>
+		  <hr/>
+		  <form>
+			<div class="form-group">
+			  <label for="text">Task</label>
+			  <input type="text" class="form-control" placeholder="Enter Task" id="taskInput">
+			</div>
+			<button class="btn btn-primary" id="btnAddTask">Add Task</button>
+			<hr/>
+			<div class="form-group mt-5">
+				<label for="number">Task Id</label>
+				<input type="number" class="form-control" placeholder="Enter Task Id for complition" id="taskInputId">
+			  </div>
+			  <button class="btn btn-primary" id="btncompleteTask">Complete Task</button>
+
+		  </form>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+	<script src="js/app.js"></script>
+  </body>
+</html>
